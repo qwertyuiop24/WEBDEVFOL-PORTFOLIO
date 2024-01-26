@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <nav>
+            <a class="logo" href="#">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <ul class="menu">
+                <li><a href="#header" class="active">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-heading">
+            <h3>Hi! I'm Aron <span>Layson</span></h3>
+            <h1>Holy Angel <span>University</span></h1>
+            <p>Hello! I'm Aron Layson, an enthusiastic IT student with a passion for technology and innovation. 
+                Currently pursuing my major Web Developement at Holy Angel University, 
+                I am deeply interested in programming, making website, etc. Through hands-on projects and coursework, I've gained valuable skills in HTML/CSS, Python, Javascript, and so on. 
+                My goal is to leverage my education and experiences to make meaningful contributions to the field of IT, 
+                particularly in making website. Outside of academics, I enjoy fixing computers, experiments of other codes, 
+                and I'm always eager to learn and explore new technologies.</p>
+                <a class="header-btn" href="#contact">Contact</a>
+        </div>
+        <div class="images">
+            <img src="images/boy.png" class="boy">
+        </div>
+    </section>
+
+    <section id="skills">
+        
+        <div class="about-text">
+            <h2>Web <span>Development</span></h2>
+            <h3>3rd Year Web Development Student at Holy Angel University</h3>
+            <p>I am proficient in HTML, CSS, PHP, and JavaScript, which are essential languages for web development. With strong HTML and CSS skills, I create visually appealing and responsive web layouts. My expertise in PHP allows me to build dynamic and interactive websites, while JavaScript enhances the functionality and interactivity of web applications. I am passionate about leveraging these skills to create engaging and user-friendly digital experiences.</p>
+            <a class="header-btn" href="#contact">Read More</a>
+        </div>
+        <div class="skill">
+            <h1>My Skills</h1>
+            <li><h3>HTML</h3>
+                <span class="bar"><span class="html"></span>
+            </li>
+            <li><h3>CSS</h3>
+                <span class="bar"><span class="css"></span>
+            </li>
+            <li><h3>PHP</h3>
+                <span class="bar"><span class="php"></span>
+            </li>
+            <li><h3>JavaScript</h3>
+                <span class="bar"><span class="javascript"></span>
+            </li>
+        </div>
+    </section>
+
+<!-----Projects----->
+    <section class="projects" id="projects">
+        <div class="project-heading">
+            <span>Let's See My Work</span>
+            <h3>My Projects</h3>
+        </div>
+
+        <!---Filter--->
+        <ul class="project-filter">
+            <li class="list project-filter-active">All</li>
+            <li class="list">Application</li>
+            <li class="list">Web Design</li>
+            <li class="list">Mockup</li>
+        </ul>
+        <!--container--------->
+  <div class="portfolio-container">
+    <!--1------------>
+    <a href="https://bikengo.bitbucket.io/" class="portfolio-box app" data-lightbox="work">
+      <img alt="" src="images/g1.png">
+      <h5>Click the Image to redirect to the Website.</h5>
+    </a>
+    <!--2------------>
+    <a href="images/g1.png" class="portfolio-box app" data-lightbox="work">
+      <img alt="" src="images/g1.png">
+      <h5>Click the Image to enlarge the picture and see it.</h5>
+    </a>
+    <!--3------------>
+    <a href="https://threetailors.shop/" class="portfolio-box appdesign" data-lightbox="work">
+      <img alt="" src="images/g2.png">
+      <h5>Click the Image to redirect to the Website.</h5>
+    </a>
+    <!--4------------>
+    <a href="images/g2.png" class="portfolio-box web" data-lightbox="work">
+      <img alt="" src="images/g2.png">
+      <h5>Click the Image to enlarge the picture and see it.</h5>
+    </a>
+    <!--5------------>
+    <a href="images/g2.png" class="portfolio-box web" data-lightbox="work">
+      <img alt="" src="images/g2.png">
+    </a>
+    <!--6------------>
+    <a href="images/g2.png" class="portfolio-box ai" data-lightbox="work">
+      <img alt="" src="images/g2.png">
+    </a>
+  </div>
+  </section>
+  <!--js---------------------------------->
+  <script src="js/JQuery.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script>
+    /*blog-filter-menu----------------------------*/
+    $(document).on('click','.portfolio-filter li',function(){
+            $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active')
+        });
+        
+     /*portfolio-filter---------------------------------*/
+     $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.portfolio-box').show('1000');
+                }
+                else{
+                    $('.portfolio-box').not('.'+value).hide('1000');
+                    $('.portfolio-box').filter('.'+value).show('1000');
+                }
+            });
+        });
+  </script>
+    </section>
+</body>
+</html>
