@@ -389,13 +389,3 @@ h5 {
     color: #00e9a5;
     text-align: center;
 }
-
-/* For tablets and smaller devices */
-@media (max-width: 1024px) {
-    /* Add your responsive styles here */
-}
-
-/* For smartphones and smaller devices */
-@media (max-width: 768px) {
-    /* Add your responsive styles here */
-}
