@@ -407,3 +407,15 @@ h5 {
         width: 0;
     }
 }
+
+@media screen and (max-width: 600px) {
+  /* CSS rules for screens up to 600px wide (e.g., smartphones) */
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* CSS rules for screens between 601px and 1024px wide (e.g., tablets) */
+}
+
+@media screen and (min-width: 1025px) {
+  /* CSS rules for screens wider than 1025px (e.g., desktops) */
+}
