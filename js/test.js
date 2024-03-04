@@ -176,12 +176,18 @@ function scrollFunction() {
     }
 }
 
-// Display a custom message in the browser tab
-document.title = "Not Interested?";
-// Event listener for when the user switches back to the tab
-document.addEventListener("visibilitychange", function() {
-    if (document.visibilityState === 'visible') {
-      // Change the title back to the default one
-      document.title = "Portfolio | Aron Layson";
-    }
-  });
+// Function to change the title when the tab loses focus
+function changeTitle() {
+    document.title = "Please go back to the page!";
+  }
+
+  // Function to change the title back to the default one when the tab gains focus
+  function restoreTitle() {
+    document.title = "Portfolio | Aron Layson";
+  }
+
+  // Event listener for when the tab loses focus
+  window.addEventListener('blur', changeTitle);
+
+  // Event listener for when the tab gains focus
+  window.addEventListener('focus', restoreTitle);
