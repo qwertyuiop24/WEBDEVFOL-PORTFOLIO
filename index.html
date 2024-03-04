@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Aron Layson</title>
+    <title>One Page Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -32,7 +32,7 @@
                 My goal is to leverage my education and experiences to make meaningful contributions to the field of IT, 
                 particularly in making website. Outside of academics, I enjoy fixing computers, experiments of other codes, 
                 and I'm always eager to learn and explore new technologies.</p>
-                <a class="header-btn" href="#contact">Contact</a>
+                <a class="header-btn" href="mailto:aronlayson79@gmail.com">Contact</a>
         </div>
         <div class="images">
             <img src="images/boy.png" class="boy">
@@ -117,17 +117,20 @@
   </section>
 
  <!-- About section -->
-<section id="about">
+ <section id="about" class="about-section">
     <div class="about-content">
-        <img src="images/boy2.jpg" alt="Aron Layson" class="profile-image">
-        <h2>About Me</h2>
-        <p>Hello! I'm Aron Layson, an enthusiastic IT student with a passion for technology and innovation. Currently pursuing my major in Web Development at Holy Angel University, I am deeply interested in programming, creating websites, and exploring various technologies. Through hands-on projects and coursework, I've gained valuable skills in HTML/CSS, Python, JavaScript, and more.</p>
-        <p>My goal is to leverage my education and experiences to make meaningful contributions to the field of IT, particularly in web development. Outside of academics, I enjoy fixing computers, experimenting with different coding languages, and staying up-to-date with the latest tech trends.</p>
-        <p>Feel free to explore my portfolio to see some of my projects, and don't hesitate to contact me if you have any questions or collaboration opportunities!</p>
-        <a href="#contact" class="btn">Contact Me</a>
+        <div class="profile-image-container">
+            <img src="images/boy2-removebg-preview.png" alt="Aron Layson" class="profile-image">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I'm Aron Layson, an enthusiastic IT student with a passion for technology and innovation. Currently pursuing my major in Web Development at Holy Angel University, I am deeply interested in programming, creating websites, and exploring various technologies. Through hands-on projects and coursework, I've gained valuable skills in HTML/CSS, Python, JavaScript, and more.</p>
+            <p>My goal is to leverage my education and experiences to make meaningful contributions to the field of IT, particularly in web development. Outside of academics, I enjoy fixing computers, experimenting with different coding languages, and staying up-to-date with the latest tech trends.</p>
+            <p>Feel free to explore my portfolio to see some of my projects, and don't hesitate to contact me if you have any questions or collaboration opportunities!</p>
+            <a href="mailto:aronlayson79@gmail.com" class="btn">Contact Me</a>
+        </div>
     </div>
 </section>
-
 
 <!-- Contact section -->
 <section id="contact" class="contact-section">
@@ -146,14 +149,14 @@
                 <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn" onclick="sendEmail()">Send Message</button>
             </div>
         </form>
 
         <div class="social-icons">
             <h3>Connect with me:</h3>
+            <a href="https://www.facebook.com/aron.layson/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
             <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
             <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
         </div>
@@ -166,13 +169,14 @@
             <div class="col-md-6">
                 <h4>About Me</h4>
                 <p>Aron Layson</p>
+                <p>WD - 301</p>
             </div>
             <div class="col-md-6">
                 <h4>Contact Me</h4>
                 <ul class="contact-info">
-                    <li><i class="fas fa-envelope"></i> aronlayson79@gmail.com</li>
-                    <li><i class="fas fa-phone"></i> +639202206277</li>
-                    <li><i class="fas fa-map-marker-alt"></i>Angeles City</li>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:aronlayson79@gmail.com">aronlayson79@gmail.com</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+639202206277">+639202206277</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps?q=Angeles+City">Angeles City</a></li>
                 </ul>
             </div>
         </div>
@@ -186,6 +190,9 @@
   <script src="js/lightbox.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
+    function sendEmail() {
+    window.location.href = "mailto:aronlayson79@gmail.com";
+}
     /*blog-filter-menu----------------------------*/
     $(document).on('click','.portfolio-filter li',function(){
             $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active')
