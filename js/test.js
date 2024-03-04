@@ -164,3 +164,14 @@ document.getElementById('footer').addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+// Show or hide the button based on scroll position
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+}
