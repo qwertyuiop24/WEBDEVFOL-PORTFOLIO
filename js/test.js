@@ -178,7 +178,7 @@ function scrollFunction() {
 
 // Function to change the title when the tab loses focus
 function changeTitle() {
-    document.title = "Please go back to the page!";
+    document.title = "Please go back to the page! 😡";
   }
 
   // Function to change the title back to the default one when the tab gains focus
