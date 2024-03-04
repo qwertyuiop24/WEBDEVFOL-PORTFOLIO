@@ -642,7 +642,16 @@ h5 {
 }
 
 .footer a {
+    font-weight: bold;
     color: white;
+    text-decoration: none; /* Remove default underline */
+    cursor: pointer; /* Change cursor style to pointer */
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.footer a:hover {
+    color: #00ff9d; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 .footer .container {
