@@ -459,71 +459,73 @@ h5 {
     }
 }
 
-/*****About*****/
-#about {
-    background-color: #1e1e1e; /* Background color */
-    color: #fff; /* Text color */
-    padding: 50px; /* Padding for content */
+.about-section {
+    padding: 80px 0;
+    background-color: #333; /* Adjust background color */
 }
 
 .about-content {
-    max-width: 800px; /* Maximum width for content */
-    margin: 0 auto; /* Center the content horizontally */
-    text-align: center; /* Center-align text */
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-content h2 {
-    font-size: 2.5rem; /* Heading font size */
-    margin-bottom: 20px; /* Bottom margin for spacing */
-    text-transform: uppercase; /* Uppercase heading text */
-    letter-spacing: 2px; /* Letter spacing for heading */
-}
-
-.about-content p {
-    font-size: 1.2rem; /* Paragraph font size */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 30px; /* Bottom margin for spacing */
-}
-
-.about-content a {
-    color: #00e9a5; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold font weight */
-    transition: color 0.3s ease; /* Smooth transition for link color */
-}
-
-.about-content a:hover {
-    color: #00ff9d; /* Link color on hover */
-}
-
-.about-content .btn {
-    display: inline-block; /* Display as inline block */
-    padding: 10px 20px; /* Padding for button */
-    background-color: #00e9a5; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Button border radius */
-    text-transform: uppercase; /* Uppercase button text */
-    letter-spacing: 1px; /* Letter spacing for button text */
-    transition: background-color 0.3s ease; /* Smooth transition for button background color */
-}
-
-.about-content .btn:hover {
-    background-color: #00ff9d; /* Button background color on hover */
+.profile-image-container {
+    width: 250px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0;
+    margin-right: 70px;
 }
 
 .profile-image {
-    max-width: 100%; /* Ensure image does not exceed container width */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Add space below the image */
-    border-radius: 10px; /* Add a slight border radius for a softer look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; /* Adjust object position */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
 }
 
 .profile-image:hover {
-    transform: scale(1.05); /* Enlarge the image slightly on hover for a zoom effect */
+    transform: scale(1.1); /* Zoom in slightly on hover */
 }
+
+.about-text {
+    flex: 0 0 55%;
+    padding: 0 20px;
+    color: #ededed; /* Adjust text color for dark background */
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00e9a5;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-text .btn:hover {
+    background-color: #00e9a5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
 
 
 /* Contact section */
@@ -637,6 +639,10 @@ h5 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.footer a {
+    color: white;
 }
 
 .footer .container {
