@@ -754,39 +754,56 @@ h5 {
     background-color: #ffaec5; /* Lighter pink on hover */
 }
 
-/* Media queries for responsiveness */
+/* Add this section for responsiveness */
 @media (max-width: 1200px) {
-    .images {
-        display: none; /* Hide images on smaller screens */
-    }
-}
-
-@media (max-width: 992px) {
-    .header-heading {
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%); /* Center header text on smaller screens */
+    .portfolio-box {
+        width: calc(50% - 40px);
     }
 }
 
 @media (max-width: 768px) {
-    nav ul li a {
-        font-size: 0.6rem; /* Decrease font size for navigation links on smaller screens */
+    .portfolio-box {
+        width: calc(100% - 40px);
     }
 }
 
-@media (max-width: 576px) {
-    .header-heading {
-        width: 90%; /* Adjust header text width on smaller screens */
+/* Adjust styles for smaller screens */
+@media (max-width: 550px) {
+    .project-heading h3 {
+        font-size: 1.8rem;
     }
 
-    .about-text {
-        width: 100%; /* Adjust about text width on smaller screens */
+    .about-text h2 {
+        font-size: 2rem;
     }
-}
 
-@media (max-width: 480px) {
     .footer .col-md-6 {
-        width: 100%; /* Adjust footer column width on smaller screens */
-        margin-right: 0; /* Remove margin for footer columns on smaller screens */
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+/* Adjust styles for even smaller screens */
+@media (max-width: 400px) {
+    .about-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+    }
+
+    .contact-form .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
     }
 }
