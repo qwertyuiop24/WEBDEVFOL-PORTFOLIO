@@ -175,3 +175,13 @@ function scrollFunction() {
         document.getElementById("scrollToTopBtn").style.display = "none";
     }
 }
+
+// Display a custom message in the browser tab
+document.title = "Not Interested?";
+// Event listener for when the user switches back to the tab
+document.addEventListener("visibilitychange", function() {
+    if (document.visibilityState === 'visible') {
+      // Change the title back to the default one
+      document.title = "Portfolio | Aron Layson";
+    }
+  });
