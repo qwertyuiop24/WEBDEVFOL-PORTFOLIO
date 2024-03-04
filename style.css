@@ -757,20 +757,30 @@ h5 {
 /* Adjust styles for smaller screens */
 @media (max-width: 768px) {
     .portfolio-box {
-        width: calc(50% - 40px);
+        width: calc(50% - 20px);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+    }
+
+    .contact-form .btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 550px) {
     .portfolio-box {
-        width: calc(100% - 40px);
+        width: calc(100% - 20px);
     }
 }
 
 @media (max-width: 400px) {
     .portfolio-box {
-        width: calc(100% - 20px);
-        margin: 10px;
+        width: calc(100% - 10px);
+        margin: 5px;
     }
 
     .contact-form input,
@@ -780,6 +790,6 @@ h5 {
 
     .contact-form .btn {
         padding: 10px 20px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
