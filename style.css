@@ -754,56 +754,32 @@ h5 {
     background-color: #ffaec5; /* Lighter pink on hover */
 }
 
-/* Add this section for responsiveness */
-@media (max-width: 1200px) {
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
     .portfolio-box {
         width: calc(50% - 40px);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
     .portfolio-box {
         width: calc(100% - 40px);
     }
 }
 
-/* Adjust styles for smaller screens */
-@media (max-width: 550px) {
-    .project-heading h3 {
-        font-size: 1.8rem;
-    }
-
-    .about-text h2 {
-        font-size: 2rem;
-    }
-
-    .footer .col-md-6 {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .contact-form {
-        max-width: 100%;
-    }
-}
-
-/* Adjust styles for even smaller screens */
 @media (max-width: 400px) {
-    .about-text h2 {
-        font-size: 1.6rem;
-    }
-
-    .contact-form .form-group {
-        margin-bottom: 15px;
+    .portfolio-box {
+        width: calc(100% - 20px);
+        margin: 10px;
     }
 
     .contact-form input,
     .contact-form textarea {
-        padding: 12px;
+        padding: 10px;
     }
 
     .contact-form .btn {
-        padding: 12px 24px;
-        font-size: 1rem;
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
