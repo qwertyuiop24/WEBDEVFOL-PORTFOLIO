@@ -92,12 +92,12 @@ nav ul li a {
     transition: border-bottom 0.6s ease, box-shadow 0.6s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:not(.logo):hover {
     border-bottom: 2px solid #00e9a5;
     box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
 }
 
-.active {
+:not(.logo).active {
     border-bottom: 2px solid #00e9a5;
     box-shadow: 5px 10px 30px rgba(0, 255, 128, 0.4);
 }
