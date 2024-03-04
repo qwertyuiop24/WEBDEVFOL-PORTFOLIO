@@ -718,3 +718,30 @@ h5 {
 }
 
 /* End Footer Styles */
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: white; /* Light pink */
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 9999;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#scrollToTopBtn img {
+    width: 40px; /* Adjust arrow size */
+    height: auto;
+    transform: translateY(-2px); /* Adjust vertical position */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ffaec5; /* Lighter pink on hover */
+}
+
