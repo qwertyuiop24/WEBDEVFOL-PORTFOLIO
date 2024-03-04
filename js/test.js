@@ -165,6 +165,14 @@ document.getElementById('footer').addEventListener('click', function() {
     });
 });
 
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 // Show or hide the button based on scroll position
 window.onscroll = function() {scrollFunction()};
 
