@@ -754,3 +754,39 @@ h5 {
     background-color: #ffaec5; /* Lighter pink on hover */
 }
 
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .images {
+        display: none; /* Hide images on smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .header-heading {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); /* Center header text on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        font-size: 0.6rem; /* Decrease font size for navigation links on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .header-heading {
+        width: 90%; /* Adjust header text width on smaller screens */
+    }
+
+    .about-text {
+        width: 100%; /* Adjust about text width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer .col-md-6 {
+        width: 100%; /* Adjust footer column width on smaller screens */
+        margin-right: 0; /* Remove margin for footer columns on smaller screens */
+    }
+}
