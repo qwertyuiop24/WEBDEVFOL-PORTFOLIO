@@ -157,14 +157,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Smooth scroll to top when footer is clicked
-document.getElementById('footer').addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
 // Scroll to top function
 function scrollToTop() {
     window.scrollTo({
