@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-qfj/z3qHZ2tjLAE4BfFDDNPtHRvHCdR+NtjKr+GSkgXLk3DO9gHdECvmvOr8+XpP" crossorigin="anonymous">
     <link rel="shortcut icon" type="x-icon" href="images/logo.png">
 </head>
 <body>
@@ -19,6 +20,7 @@
                 <li><a href="#header" class="active">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -32,7 +34,7 @@
                 My goal is to leverage my education and experiences to make meaningful contributions to the field of IT, 
                 particularly in making website. Outside of academics, I enjoy fixing computers, experiments of other codes, 
                 and I'm always eager to learn and explore new technologies.</p>
-                <a class="header-btn" href="mailto:aronlayson79@gmail.com">Contact</a>
+                <a class="header-btn" href="resume/Resume_3.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
         <div class="images">
             <img src="images/boy.png" class="boy">
@@ -40,7 +42,6 @@
     </section>
 
     <section id="skills">
-        
         <div class="about-text">
             <h2>Web <span>Development</span></h2>
             <h3>3rd Year Web Development Student at Holy Angel University</h3>
@@ -48,22 +49,51 @@
             <p class="hidden">As an aspiring IT student, my journey into the world of technology began with a profound curiosity and passion for innovation. With a relentless drive for continuous learning and growth, I am committed to making meaningful contributions to the ever-evolving landscape of IT, leveraging technology to drive positive change and innovation.</p>
             <button class="read-more-btn">Read More</button>
         </div>
-        <div class="skill">
-            <h1>My Skills</h1>
-            <li><h3>HTML</h3>
-                <span class="bar"><span class="html"></span>
+    </div>
+    <div class="skill">
+        <h1>My Skills</h1>
+        <ul>
+            <li>
+                <div class="icon"><i class="fab fa-html5"></i></div>
+                <div class="skill-details">
+                    <h3>HTML</h3>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
             </li>
-            <li><h3>CSS</h3>
-                <span class="bar"><span class="css"></span>
+            <li>
+                <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="skill-details">
+                    <h3>CSS</h3>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
             </li>
-            <li><h3>PHP</h3>
-                <span class="bar"><span class="php"></span>
+            <li>
+                <div class="icon"><i class="fab fa-php"></i></div>
+                <div class="skill-details">
+                    <h3>PHP</h3>
+                    <div class="bar">
+                        <span class="php"></span>
+                    </div>
+                </div>
             </li>
-            <li><h3>JavaScript</h3>
-                <span class="bar"><span class="javascript"></span>
+            <li>
+                <div class="icon"><i class="fab fa-js"></i></div>
+                <div class="skill-details">
+                    <h3>JavaScript</h3>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
             </li>
-        </div>
+        </ul>
+    </div>
     </section>
+    
+    
 
 <!-----Projects----->
     <section class="projects" id="projects">
@@ -115,6 +145,35 @@
 </div>
 
   </section>
+
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>Aron's skills in web development are top-notch. He's got a real knack for bringing websites to life, making them look great and work smoothly. Working with Aron has been awesome, and I'm confident he'll keep doing great things with his talent and dedication.</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/avatar1.jpg" alt="Author Avatar">
+                    <h3>Miguel Lee</h3>
+                    <p>CEO, Company Inc.</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <p>Working with Aron was a breeze! His expertise in web development shines through in every project he tackles. He's not just a coder; he's a problem solver who knows how to create sleek, user-friendly websites.</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/avatar2.jpg" alt="Author Avatar">
+                    <h3>Daryll Medina</h3>
+                    <p>CTO, Another Company</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
  <!-- About section -->
  <section id="about" class="about-section">
