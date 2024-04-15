@@ -4,7 +4,7 @@ Welcome to my portfolio website! This website showcases my projects, skills, and
 
 ## Live Demo
 
-You can view the live demo of my portfolio website [here](https://www.example.com).
+You can view the live demo of my portfolio website [here](https://aelayson.netlify.app/).
 
 ## Table of Contents
 
