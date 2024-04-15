@@ -32,7 +32,7 @@ You can view the live demo of my portfolio website [here](https://www.example.co
 
 To set up this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
+1. Clone the repository: `git clone https://[github.com/your-username/your-repository](https://github.com/qwertyuiop24/WEBDEVFOL-PORTFOLIO).git`
 2. Navigate to the project directory: `cd your-repository`
 
 ## Usage
