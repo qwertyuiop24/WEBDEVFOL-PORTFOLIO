@@ -157,6 +157,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Smooth scroll to top when footer is clicked
+document.getElementById('footer').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
 // Scroll to top function
 function scrollToTop() {
     window.scrollTo({
@@ -191,3 +199,18 @@ function changeTitle() {
 
   // Event listener for when the tab gains focus
   window.addEventListener('focus', restoreTitle);
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("testimonial");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 10000); // Change image every 10 seconds
+}
