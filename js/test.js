@@ -214,3 +214,22 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
+
+// Function to close the banner
+function closeBanner() {
+    var banner = document.getElementById('banner');
+    var blurryBackground = document.getElementById('blurryBackground');
+    banner.style.display = 'none';
+    blurryBackground.style.display = 'none';
+}
+
+// Function to show the banner and blurry background
+function showBanner() {
+    var banner = document.getElementById('banner');
+    var blurryBackground = document.getElementById('blurryBackground');
+    banner.style.display = 'block';
+    blurryBackground.style.display = 'block';
+}
+
+// Show the banner after a delay (e.g., 1 second)
+setTimeout(showBanner, 1000);
